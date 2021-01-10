@@ -60,7 +60,7 @@ function changeTable(filterOption){
 		if(!isFilter.checked){
 			highlightTableCells("solid", "", "", "");
 		} else {
-			highlightTableCells("", "none", "none", "none");
+			filterTable("", "none", "none", "none");
 		}
 	} else if (filterOption === "LETRAS QUE TÊM A FORMA ESCRITA FAMILIAR PARA BRASILEIROS, MAS CUJA A PRONUNCIA É DIFERENTE") {
 		clearSelection();
