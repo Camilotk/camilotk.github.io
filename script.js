@@ -1,10 +1,3 @@
-/*
- * var img_url = document.querySelector('.letter').src[-3]
-var img_url = document.querySelector('.letter').src
-img_url.slice(0, -3)+"gif"
-document.querySelector('.letter').src = img_url.slice(0, -3)+"gif"
- */
-
 var animations = document.querySelectorAll('.animated')
 var active_urls = [];
 
@@ -67,7 +60,7 @@ function changeTable(filterOption){
 		if(!isFilter.checked){
 			highlightTableCells("solid", "", "", "");
 		} else {
-			
+			highlightTableCells("", "none", "none", "none");
 		}
 	} else if (filterOption === "LETRAS QUE TÊM A FORMA ESCRITA FAMILIAR PARA BRASILEIROS, MAS CUJA A PRONUNCIA É DIFERENTE") {
 		clearSelection();
